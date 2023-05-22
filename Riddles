@@ -1,0 +1,256 @@
+from tkinter import *
+from tkinter import ttk
+
+
+def check_answer1():
+    ans = Label(tab1, text="")
+    ans.place(x=100, y=95)
+    guess = entry1.get()
+    if guess == "A Bottle":
+        ans = Label(tab1, text="CORRECT")
+        ans.place(x=215, y=95)
+    else:
+        ans = Label(tab1, text="WRONG")
+        ans.place(x=220, y=95)
+
+
+window = Tk()
+window.title("Riddles")
+notebook = ttk.Notebook(window)
+tab1 = Frame(notebook)
+notebook.add(tab1, text="Riddle 1")
+notebook.pack(expand=True)
+empty = Label(tab1, text="", width=50, height=25)
+empty.pack(expand=True)
+riddle1 = Label(tab1, text="What has a neck but no head?")
+riddle1.place(x=165, y=10)
+entry1 = Entry(tab1)
+entry1.place(x=185, y=30)
+check1 = Button(tab1, text="Check Answer", command=check_answer1)
+check1.place(x=203, y=60)
+
+
+def check_answer2():
+    ans = Label(tab2, text="")
+    ans.place(x=215, y=95)
+    guess = entry2.get()
+    if guess == "David":
+        ans = Label(tab2, text="CORRECT")
+        ans.place(x=215, y=95)
+    else:
+        ans = Label(tab2, text="WRONG")
+        ans.place(x=220, y=95)
+
+
+tab2 = Frame(notebook)
+notebook.add(tab2, text="Riddle 2")
+notebook.pack(expand=True)
+empty2 = Label(tab2, text="", width=50, height=25)
+empty2.pack(expand=True)
+riddle2 = Label(tab2, text="David's father has three sons: Snap, Crackle, and _____?")
+riddle2.place(x=105, y=10)
+entry2 = Entry(tab2)
+entry2.place(x=185, y=30)
+check2 = Button(tab2, text="Check Answer", command=check_answer2)
+check2.place(x=203, y=60)
+
+
+def check_answer3():
+    ans = Label(tab3, text="")
+    ans.place(x=215, y=95)
+    guess = entry3.get()
+    if guess == "A Feather":
+        ans = Label(tab3, text="CORRECT")
+        ans.place(x=215, y=95)
+    else:
+        ans = Label(tab3, text="WRONG")
+        ans.place(x=220, y=95)
+
+
+tab3 = Frame(notebook)
+notebook.add(tab3, text="Riddle 3")
+notebook.pack(expand=True)
+empty3 = Label(tab3, text="", width=50, height=25)
+empty3.pack(expand=True)
+riddle3 = Label(tab3, text="I am easy to lift, but hard to throw. What am I?")
+riddle3.place(x=115, y=10)
+entry3 = Entry(tab3)
+entry3.place(x=185, y=30)
+check3 = Button(tab3, text="Check Answer", command=check_answer3)
+check3.place(x=203, y=60)
+
+
+def check_answer4():
+    ans = Label(tab4, text="")
+    ans.place(x=100, y=95)
+    guess = entry4.get()
+    if guess == "Age":
+        ans = Label(tab4, text="CORRECT")
+        ans.place(x=215, y=95)
+    else:
+        ans = Label(tab4, text="WRONG")
+        ans.place(x=220, y=95)
+
+
+tab4 = Frame(notebook)
+notebook.add(tab4, text="Riddle 4")
+notebook.pack(expand=True)
+empty4 = Label(tab4, text="", width=50, height=25)
+empty4.pack(expand=True)
+riddle4 = Label(tab4, text="What goes up, but never comes down?")
+riddle4.place(x=130, y=10)
+entry4 = Entry(tab4)
+entry4.place(x=185, y=30)
+check4 = Button(tab4, text="Check Answer", command=check_answer4)
+check4.place(x=203, y=60)
+
+
+def check_answer5():
+    ans = Label(tab5, text="")
+    ans.place(x=100, y=95)
+    guess = entry5.get()
+    if guess == "A Goldfish":
+        ans = Label(tab5, text="CORRECT")
+        ans.place(x=215, y=95)
+    else:
+        ans = Label(tab5, text="WRONG")
+        ans.place(x=220, y=95)
+
+
+tab5 = Frame(notebook)
+notebook.add(tab5, text="Riddle 5")
+notebook.pack(expand=True)
+empty5 = Label(tab5, text="", width=50, height=25)
+empty5.pack(expand=True)
+riddle5 = Label(tab5, text="Which fish costs the most?")
+riddle5.place(x=172, y=10)
+entry5 = Entry(tab5)
+entry5.place(x=185, y=30)
+check5 = Button(tab5, text="Check Answer", command=check_answer5)
+check5.place(x=203, y=60)
+
+
+def check_answer6():
+    ans = Label(tab6, text="")
+    ans.place(x=100, y=95)
+    guess = entry6.get()
+    if guess == "A Sponge":
+        ans = Label(tab6, text="CORRECT")
+        ans.place(x=215, y=95)
+    else:
+        ans = Label(tab6, text="WRONG")
+        ans.place(x=220, y=95)
+
+
+tab6 = Frame(notebook)
+notebook.add(tab6, text="Riddle 6")
+notebook.pack(expand=True)
+empty6 = Label(tab6, text="", width=50, height=25)
+empty6.pack(expand=True)
+riddle6 = Label(tab6, text="What is full of holes but still holds water?")
+riddle6.place(x=135, y=10)
+entry6 = Entry(tab6)
+entry6.place(x=185, y=30)
+check6 = Button(tab6, text="Check Answer", command=check_answer6)
+check6.place(x=203, y=60)
+
+
+def check_answer7():
+    ans = Label(tab7, text="")
+    ans.place(x=100, y=95)
+    guess = entry7.get()
+    if guess == "A Promise":
+        ans = Label(tab7, text="CORRECT")
+        ans.place(x=215, y=95)
+    else:
+        ans = Label(tab7, text="WRONG")
+        ans.place(x=220, y=95)
+
+
+tab7 = Frame(notebook)
+notebook.add(tab7, text="Riddle 7")
+notebook.pack(expand=True)
+empty7 = Label(tab7, text="", width=50, height=25)
+empty7.pack(expand=True)
+riddle7 = Label(tab7, text="What gets broken without being held?")
+riddle7.place(x=142, y=10)
+entry7 = Entry(tab7)
+entry7.place(x=185, y=30)
+check7 = Button(tab7, text="Check Answer", command=check_answer7)
+check7.place(x=203, y=60)
+
+
+def check_answer8():
+    ans = Label(tab8, text="")
+    ans.place(x=100, y=95)
+    guess = entry8.get()
+    if guess == "A Palm":
+        ans = Label(tab8, text="CORRECT")
+        ans.place(x=215, y=95)
+    else:
+        ans = Label(tab8, text="WRONG")
+        ans.place(x=220, y=95)
+
+
+tab8 = Frame(notebook)
+notebook.add(tab8, text="Riddle 8")
+notebook.pack(expand=True)
+empty8 = Label(tab8, text="", width=50, height=25)
+empty8.pack(expand=True)
+riddle8 = Label(tab8, text="What kind of tree can you carry in your hand?")
+riddle8.place(x=130, y=10)
+entry8 = Entry(tab8)
+entry8.place(x=185, y=30)
+check8 = Button(tab8, text="Check Answer", command=check_answer8)
+check8.place(x=203, y=60)
+
+
+def check_answer9():
+    ans = Label(tab9, text="")
+    ans.place(x=100, y=95)
+    guess = entry9.get()
+    if guess == "All Of Them":
+        ans = Label(tab9, text="CORRECT")
+        ans.place(x=215, y=95)
+    else:
+        ans = Label(tab9, text="WRONG")
+        ans.place(x=220, y=95)
+
+
+tab9 = Frame(notebook)
+notebook.add(tab9, text="Riddle 9")
+notebook.pack(expand=True)
+empty9 = Label(tab9, text="", width=50, height=25)
+empty9.pack(expand=True)
+riddle9 = Label(tab9, text="How many months have 28 days?")
+riddle9.place(x=155, y=10)
+entry9 = Entry(tab9)
+entry9.place(x=185, y=30)
+check9 = Button(tab9, text="Check Answer", command=check_answer9)
+check9.place(x=203, y=60)
+
+
+def check_answer10():
+    ans = Label(tab10, text="")
+    ans.place(x=100, y=95)
+    guess = entry10.get()
+    if guess == "An Echo":
+        ans = Label(tab10, text="CORRECT")
+        ans.place(x=215, y=95)
+    else:
+        ans = Label(tab10, text="WRONG")
+        ans.place(x=220, y=95)
+
+
+tab10 = Frame(notebook)
+notebook.add(tab10, text="Riddle 10")
+notebook.pack(expand=True)
+empty10 = Label(tab10, text="", width=50, height=25)
+empty10.pack(expand=True)
+riddle10 = Label(tab10, text="I cannot talk, but I always reply when spoken to. What am I?")
+riddle10.place(x=100, y=10)
+entry10 = Entry(tab10)
+entry10.place(x=185, y=30)
+check10 = Button(tab10, text="Check Answer", command=check_answer10)
+check10.place(x=203, y=60)
+window.mainloop()
